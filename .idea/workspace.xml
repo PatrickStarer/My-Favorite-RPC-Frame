@@ -8,12 +8,19 @@
       <change afterPath="$PROJECT_DIR$/mfrf-api/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mfrf-api/src/main/java/mfrf/UserService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mfrf-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-consumer/src/main/java/org/example/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mfrf-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/annotation/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/annotation/ProviderLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/Serializer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mfrf-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-provider/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-consumer/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-consumer/src/main/java/annotation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-provider/src/main/java/annotation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-provider/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +32,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -69,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681045333344</updated>
-      <workItem from="1681045334460" duration="2310000" />
+      <workItem from="1681045334460" duration="5033000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1681045548605</created>
@@ -112,5 +121,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建项目" />
     <option name="LAST_COMMIT_MESSAGE" value="创建项目" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mfrf-core/src/main/java/serializer/Serializer.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
