@@ -1,19 +1,10 @@
 package serializer;
 
+public interface Serializer {
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+     byte[] toSerializer(Object object);
 
-@Getter
-@AllArgsConstructor
-public enum Serializer {
+     Object backSerialize(byte[] bytes,Class<?> clazz);
 
-    KRYO(0),
-    JSON(1),
-    HESSIAN(2),
-    PROTOBUF(3);
-    private final int code;
 
 }
