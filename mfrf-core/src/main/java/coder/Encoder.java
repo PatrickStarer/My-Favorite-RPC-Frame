@@ -27,10 +27,7 @@ public class Encoder extends MessageToByteEncoder {
     }
     public Encoder(){
         this.serializer = Serializer.getByCode(1);
-
     }
-
-
     @Override
     protected void encode(ChannelHandlerContext ctx, Object msg, ByteBuf out) throws Exception {
         //八位魔数
@@ -41,8 +38,10 @@ public class Encoder extends MessageToByteEncoder {
         }else{
             out.writeInt(MessageType.RESPONSE.getCode());
         }
+        //四位序列化号
         out.writeInt(serializer.getCode());
         byte[] bytes = serializer.toSerializer(msg);
+       //四位长度
         out.writeInt(bytes.length);
         out.writeBytes(bytes);
 
