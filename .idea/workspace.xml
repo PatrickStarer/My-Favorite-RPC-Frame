@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f0e3dad2-fcf6-4eaa-a545-8af27bbf1e4a" name="Changes" comment="创建项目">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Decoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Decoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Encoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/enumeration/RPCErrorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/enumeration/RPCErrorType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +122,7 @@
       <workItem from="1681260048266" duration="369000" />
       <workItem from="1681266804669" duration="15368000" />
       <workItem from="1681286138983" duration="150000" />
-      <workItem from="1681286812971" duration="2566000" />
+      <workItem from="1681286812971" duration="2749000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1681045548605</created>
