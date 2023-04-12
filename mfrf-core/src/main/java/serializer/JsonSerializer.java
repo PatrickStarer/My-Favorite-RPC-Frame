@@ -4,10 +4,11 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import entity.RPCRequest;
+import enumeration.SerializerType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import util.exception.SerializeException;
+import exception.SerializeException;
 
 import java.io.IOException;
 
@@ -38,6 +39,11 @@ public class JsonSerializer implements Serializer{
             log.error("json反序列化时有错误发生:", e);
             throw new SerializeException("json反序列化时有错误发生");
         }
+    }
+
+    @Override
+    public int getCode() {
+        return SerializerType.valueOf("JSON").getCode();
     }
 
     //这是因为JSON是一种面向文本的数据格式，它只能表示简单数据类型（如字符串、数字、布尔值等）和一些复杂数据类型（如对象、数组等）。

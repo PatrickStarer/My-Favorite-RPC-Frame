@@ -1,5 +1,4 @@
-package annotation;
-
+package org.example.test3;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -8,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Provider {
+public @interface Pi {
 
-    String name() default "";
+    String value() default "";
 }

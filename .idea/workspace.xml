@@ -5,38 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0e3dad2-fcf6-4eaa-a545-8af27bbf1e4a" name="Changes" comment="创建项目">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Decoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Encoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/entity/RPCRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/entity/RPCResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/enumeration/RPCErrorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/enumeration/ResponseStatusCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/enumeration/SerializerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/handler/RequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/handler/ServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/provider/ServiceProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/JsonSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/util/exception/RPCException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/util/exception/SerializeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/main/java/org/example/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/main/java/org/example/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/main/java/org/example/test1/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/main/java/org/example/test1/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/main/java/org/example/test1/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/main/java/org/example/test1/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/target/classes/org/example/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/target/classes/org/example/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/target/classes/org/example/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-api/src/main/java/mfrf/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-api/target/classes/mfrf/CarService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-api/target/classes/mfrf/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/enumeration/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/scan/ProviderScan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/util/Reflect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/annotation/Provider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/annotation/ProviderLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/coder/Decoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/coder/Encoder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/entity/RPCRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/entity/RPCResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/enumeration/RPCErrorType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/enumeration/ResponseStatusCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/enumeration/SerializerType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/exception/RPCException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/exception/SerializeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/Server$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/handler/RequestHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/handler/ServerHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/provider/ServiceProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/scan/ProviderScan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/serializer/JsonSerializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/serializer/Serializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/util/Reflect$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/target/classes/util/Reflect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-provider/src/main/java/org/mfrf/ProviderStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-provider/src/main/java/org/mfrf/impl/CarServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-provider/src/main/java/org/mfrf/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-provider/target/classes/org/mfrf/ProviderStart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-provider/target/classes/org/mfrf/impl/CarServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-provider/target/classes/org/mfrf/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/org/example/test2/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/org/example/test2/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/org/example/test3/Per.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/org/example/test3/Pi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/target/classes/org/example/test2/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/target/classes/org/example/test2/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/target/classes/org/example/test3/Per.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/target/classes/org/example/test3/Pi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/annotation/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/annotation/Provider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/annotation/ProviderLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/annotation/ProviderLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/enumeration/RPCErrorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/enumeration/RPCErrorType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/provider/ServiceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/JsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/JsonSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/util/exception/RPCException.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/exception/RPCException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/util/exception/SerializeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/exception/SerializeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-provider/src/main/java/annotation/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/classes/org/example/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +71,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -86,13 +112,26 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.ProviderStart">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.mfrf.ProviderStart" />
+      <module name="mfrf-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mfrf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,8 +154,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ProviderStart" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +173,10 @@
       <workItem from="1681188164460" duration="1803000" />
       <workItem from="1681197648260" duration="6125000" />
       <workItem from="1681215731112" duration="5405000" />
+      <workItem from="1681221176356" duration="195000" />
+      <workItem from="1681260048266" duration="369000" />
+      <workItem from="1681266804669" duration="15368000" />
+      <workItem from="1681286138983" duration="150000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1681045548605</created>
@@ -175,5 +219,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建项目" />
     <option name="LAST_COMMIT_MESSAGE" value="创建项目" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mfrf-core/src/main/java/scan/ProviderScan.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="classes.toArray()[0]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

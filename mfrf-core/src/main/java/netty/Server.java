@@ -3,6 +3,7 @@ package netty;
 
 import coder.Decoder;
 import coder.Encoder;
+import enumeration.SerializerType;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -18,33 +19,37 @@ import lombok.NoArgsConstructor;
 import netty.handler.ServerHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import scan.ProviderScan;
+import serializer.Serializer;
 
 import java.util.concurrent.TimeUnit;
 
 
 @Data
-
-@NoArgsConstructor
 public class Server {
+    private static final Logger log = LoggerFactory.getLogger(Server.class);
     private Integer port;
     private String host;
-    private Integer serializer;
-
-
+    private final    Serializer serializer;
+   private static ProviderScan providerScan = new ProviderScan();
     public Server(Integer port, String host) {
         this(port,host,1);
     }
     public Server(Integer port, String host,Integer serializer) {
         this.port = port;
         this.host = host;
-        this.serializer = serializer;
+        this.serializer = Serializer.getByCode(serializer);
+        providerScan.scanProvider();
+    }
+    private Server(){
+        this(8888,"127.0.0.1",1);
 
     }
 
 
-    private static final Logger log = LoggerFactory.getLogger(Server.class);
 
     public void start() {
+
         //负责连接的连接池组
         EventLoopGroup boss = new NioEventLoopGroup();
         //负责处理io的池组
@@ -67,7 +72,7 @@ public class Server {
                             ChannelPipeline channelPipeline = ch.pipeline();
                             channelPipeline.addLast(new IdleStateHandler(30, 0, 0, TimeUnit.SECONDS))
                                     .addLast(new Decoder())
-                                    .addLast(new Encoder())
+                                    .addLast(new Encoder(serializer))
                                     .addLast(new ServerHandler());
 
                         }

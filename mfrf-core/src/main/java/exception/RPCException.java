@@ -1,4 +1,4 @@
-package util.exception;
+package exception;
 
 import enumeration.RPCErrorType;
 import lombok.AllArgsConstructor;
@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
+
 @NoArgsConstructor
 public class RPCException extends RuntimeException {
 
