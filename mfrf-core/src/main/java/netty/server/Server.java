@@ -70,7 +70,6 @@ public class Server {
                                     .addLast(new Decoder())
                                     .addLast(new Encoder(serializer))
                                     .addLast(new ServerHandler());
-
                         }
                     });
             ChannelFuture future = bootstrap.bind(host, port).sync();

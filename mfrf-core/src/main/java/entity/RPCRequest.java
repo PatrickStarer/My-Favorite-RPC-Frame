@@ -1,10 +1,14 @@
 package entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class RPCRequest implements Serializable {
 
     //要请求的接口
@@ -19,5 +23,7 @@ public class RPCRequest implements Serializable {
     private String ReqId;
     //心跳请求
     private Boolean heart;
+
+
 
 }
