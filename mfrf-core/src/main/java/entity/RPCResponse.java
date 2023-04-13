@@ -13,8 +13,8 @@ public class RPCResponse<T> implements Serializable {
    //响应数据
     private T data;
 
-    //响应序号
-    private String ResId;
+    //响应对应的请求序号
+    private String ReqId;
 
     //状态码
     private Integer status;
@@ -25,7 +25,7 @@ public class RPCResponse<T> implements Serializable {
     public static <T> RPCResponse<T> success(T data,String resId){
      RPCResponse<T> response = new RPCResponse<>();
      response.setData(data);
-     response.setResId(resId);
+     response.setReqId(resId);
      response.setStatus(ResponseStatusCode.SUCCESS.getCode());
      response.setMessage(ResponseStatusCode.SUCCESS.getMessage());
      return response;
@@ -33,7 +33,7 @@ public class RPCResponse<T> implements Serializable {
 
     public static <T> RPCResponse<T> fail(ResponseStatusCode responseCode , String resId){
      RPCResponse<T> response = new RPCResponse<>();
-     response.setResId(resId);
+     response.setReqId(resId);
      response.setStatus(responseCode.getCode());
      response.setMessage(responseCode.getMessage());
      return response;

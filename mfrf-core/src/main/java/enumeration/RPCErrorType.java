@@ -12,7 +12,10 @@ public enum RPCErrorType {
     NOT_FOUND_ANNOTATION("缺少ProviderLoader注解"),
     MAGIC_ERROR("魔数错误"),
     MESSAGE_ERROR("数据类型错误"),
-    NOT_FOUND_SERIALIZER("没有对应的序列化方法");
+    NOT_FOUND_SERIALIZER("没有对应的序列化方法"),
+    NACOS_ERROR("连接Nacos发生错误"),
+    REGISTRY_ERROR("服务注册出现异常");
+
     private final String msg;
 
 }

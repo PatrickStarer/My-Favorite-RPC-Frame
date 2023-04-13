@@ -1,7 +1,7 @@
 package org.mfrf;
 
 import annotation.ProviderLoader;
-import netty.Server;
+import netty.server.Server;
 
 
 @ProviderLoader

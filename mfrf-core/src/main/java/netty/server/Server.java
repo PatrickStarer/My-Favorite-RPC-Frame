@@ -1,9 +1,8 @@
-package netty;
+package netty.server;
 
 
 import coder.Decoder;
 import coder.Encoder;
-import enumeration.SerializerType;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -12,11 +11,8 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.timeout.IdleStateHandler;
-import jdk.nashorn.internal.runtime.linker.Bootstrap;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import netty.handler.ServerHandler;
+import netty.server.handler.ServerHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import scan.ProviderScan;
@@ -31,7 +27,7 @@ public class Server {
     private Integer port;
     private String host;
     private final    Serializer serializer;
-   private static ProviderScan providerScan = new ProviderScan();
+    private static ProviderScan providerScan = new ProviderScan();
     public Server(Integer port, String host) {
         this(port,host,1);
     }
@@ -39,7 +35,7 @@ public class Server {
         this.port = port;
         this.host = host;
         this.serializer = Serializer.getByCode(serializer);
-        providerScan.scanProvider();
+        providerScan.scanProvider(port,host);
     }
     private Server(){
         this(8888,"127.0.0.1",1);

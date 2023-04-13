@@ -1,4 +1,4 @@
-package netty.handler;
+package netty.server.handler;
 
 
 import entity.RPCRequest;

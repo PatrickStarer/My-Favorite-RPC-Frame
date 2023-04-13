@@ -4,20 +4,27 @@ import annotation.Provider;
 import annotation.ProviderLoader;
 import enumeration.RPCErrorType;
 import exception.RPCException;
+import nacos.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import provider.ServiceProvider;
 import util.Reflect;
 
+import java.net.InetSocketAddress;
 import java.util.Set;
 
 public class ProviderScan {
     private Logger log = LoggerFactory.getLogger(ProviderScan.class);
-
+    private String host;
+    private Integer port;
+    //本地服务
     private ServiceProvider serviceProvider = new ServiceProvider();
+    //nacos远程服务
+    private Registry registry = new Registry();
 
-    public void scanProvider(){
-
+    public void scanProvider(Integer port,String host){
+        this.host = host;
+        this.port =port;
         //org.mfrf.ProviderStart
         String mainClassName = Reflect.getStack();
         Class<?> startClass;
@@ -63,22 +70,17 @@ public class ProviderScan {
                     for (Class<?> clazzInterface : interfaces) {
                         //使用 该实现了接口的 全路径名 代替
                         putService(object,clazzInterface.getCanonicalName());
-
                     }
                 }else{
                     putService(object,serviceName);
                 }
-
-
             }
         }
-
-
     }
-
     private <T> void putService(T service,String serviceName){
         //添加服务提供者
         serviceProvider.addProvider(service,serviceName);
+        registry.registry(serviceName,new InetSocketAddress(host,port));
     }
 
 
