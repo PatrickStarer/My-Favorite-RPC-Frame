@@ -12,9 +12,10 @@ public class Consumer {
     public static void main(String[] args) {
         Client client = new Client(new RandomBalancer(),Serializer.JSON);
         ClientProxy proxy = new ClientProxy(client);
-        CarService carService = proxy.getProxy(CarService.class);
-        int add = carService.add(1, 2);
+        CarService service = proxy.getProxy(CarService.class);
+        String add = service.add(1, 2);
         System.out.println(add);
+
 
     }
 }

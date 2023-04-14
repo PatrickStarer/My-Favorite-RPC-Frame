@@ -8,6 +8,6 @@ import mfrf.UserService;
 public class UserServiceImpl implements UserService {
     @Override
     public void say(String msg) {
-        System.out.println("hello world");
+        System.out.println("hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world " );
     }
 }

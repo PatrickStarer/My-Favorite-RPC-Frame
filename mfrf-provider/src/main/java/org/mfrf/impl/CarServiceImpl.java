@@ -7,7 +7,7 @@ import mfrf.UserService;
 @Provider
 public class CarServiceImpl implements CarService {
     @Override
-    public int add(int a, int b) {
-        return a+b;
+    public String add(int a, int b) {
+        return "hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world ";
     }
 }

@@ -5,21 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0e3dad2-fcf6-4eaa-a545-8af27bbf1e4a" name="Changes" comment="创建项目">
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/balancer/PollingBalancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/HessianSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/KryoSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/ProtobufSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-api/src/main/java/mfrf/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-api/src/main/java/mfrf/CarService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfrf-consumer/src/main/java/org/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-consumer/src/main/java/org/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Encoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/nacos/Registry.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/nacos/Registry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/client/handler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/client/handler/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/handler/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/handler/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-consumer/target/classes/org/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-consumer/target/classes/org/Consumer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/handler/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/handler/ServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/provider/ServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/JsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/JsonSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/target/classes/nacos/Discovery.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/target/classes/nacos/Discovery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/target/classes/netty/client/proxy/ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/client/proxy/ClientProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/target/classes/netty/server/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/server/Server$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/target/classes/netty/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-provider/src/main/java/org/mfrf/impl/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-provider/src/main/java/org/mfrf/impl/CarServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-provider/src/main/java/org/mfrf/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-provider/src/main/java/org/mfrf/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +69,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="serializer" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Consumer">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.Consumer" />
@@ -171,7 +174,7 @@
       <workItem from="1681375683048" duration="869000" />
       <workItem from="1681385902689" duration="5968000" />
       <workItem from="1681433636305" duration="907000" />
-      <workItem from="1681437317119" duration="13543000" />
+      <workItem from="1681437317119" duration="16361000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1681045548605</created>

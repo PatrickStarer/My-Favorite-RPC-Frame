@@ -28,7 +28,6 @@ public class ServiceProvider {
         service.put(providerName,provider);
         log.info("本地注册服务：---->"+providerName);
     }
-
     public Object getProvider(String providerName){
         Object provider= service.get(providerName);
        if(provider == null)

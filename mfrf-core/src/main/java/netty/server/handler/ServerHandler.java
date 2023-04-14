@@ -25,7 +25,6 @@ public class ServerHandler extends SimpleChannelInboundHandler<RPCRequest> {
                 ctx.writeAndFlush(RPCResponse.success("服务端收到心跳", msg.getReqId()));
             } else {
                 Object res = requestHandler.questHandle(msg);
-
                 if (ctx.channel().isActive() && ctx.channel().isWritable()) {
                     ctx.writeAndFlush(RPCResponse.success(res, msg.getReqId()));
                 } else {

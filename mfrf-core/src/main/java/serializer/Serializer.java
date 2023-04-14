@@ -11,17 +11,17 @@ public interface Serializer {
      static Serializer getByCode(int code) {
           switch (code) {
                case 0:
-                    return null;
-//                    return new JsonSerializer();
+
+                    return new KryoSerializer();
                case 1:
                     return new JsonSerializer();
 //
                case 2:
-                    return null;
-//                    return new HessianSerializer();
+
+                    return new HessianSerializer();
                case 3:
-                    return null;
-//                    return new ProtobufSerializer();
+
+                    return new ProtobufSerializer();
                default:
                     return null;
           }
