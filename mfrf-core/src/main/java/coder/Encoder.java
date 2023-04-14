@@ -45,7 +45,5 @@ public class Encoder extends MessageToByteEncoder {
         out.writeInt(bytes.length);
         out.writeBytes(bytes);
 
-
-
     }
 }

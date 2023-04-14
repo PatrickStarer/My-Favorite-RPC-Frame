@@ -26,7 +26,7 @@ public class ServiceProvider {
 
         serviceName.add(providerName);
         service.put(providerName,provider);
-        log.info("注册服务：---->"+providerName);
+        log.info("本地注册服务：---->"+providerName);
     }
 
     public Object getProvider(String providerName){

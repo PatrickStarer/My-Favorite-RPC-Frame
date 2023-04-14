@@ -22,12 +22,15 @@ public class ServerHandler extends SimpleChannelInboundHandler<RPCRequest> {
         try {
             if (msg.getHeart()) {
                 log.info("接收到客户端心跳");
-            }
-            Object res = requestHandler.questHandle(msg);
-            if (ctx.channel().isActive() && ctx.channel().isWritable()) {
-                ctx.writeAndFlush(RPCResponse.success(res, msg.getReqId()));
+                ctx.writeAndFlush(RPCResponse.success("服务端收到心跳", msg.getReqId()));
             } else {
-                log.error("通道故障");
+                Object res = requestHandler.questHandle(msg);
+
+                if (ctx.channel().isActive() && ctx.channel().isWritable()) {
+                    ctx.writeAndFlush(RPCResponse.success(res, msg.getReqId()));
+                } else {
+                    log.error("通道故障");
+                }
             }
         } finally {
             ReferenceCountUtil.release(msg);
@@ -37,7 +40,7 @@ public class ServerHandler extends SimpleChannelInboundHandler<RPCRequest> {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        log.error("出现有错误");
+        log.error("服务端处理器出现错误");
         cause.printStackTrace();
         ctx.close();
     }
@@ -45,13 +48,13 @@ public class ServerHandler extends SimpleChannelInboundHandler<RPCRequest> {
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-        if(evt instanceof IdleStateEvent){
-            IdleState state = ((IdleStateEvent)evt).state();
-            if(state == IdleState.READER_IDLE){
+        if (evt instanceof IdleStateEvent) {
+            IdleState state = ((IdleStateEvent) evt).state();
+            if (state == IdleState.READER_IDLE) {
                 log.info("规定时间未收到心跳，断开连接");
                 ctx.close();
             }
-        }else{
+        } else {
             super.userEventTriggered(ctx, evt);
         }
     }

@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
 //请求拦截器
 public class RequestHandler {
     private static final Logger log = LoggerFactory.getLogger(RequestHandler.class);
-    //TODO 优化为static
+
     private static final ServiceProvider serviceProvider = new ServiceProvider();
 
 

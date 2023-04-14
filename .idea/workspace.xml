@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0e3dad2-fcf6-4eaa-a545-8af27bbf1e4a" name="Changes" comment="创建项目">
-      <change afterPath="$PROJECT_DIR$/mfrf-consumer/src/main/java/org/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/client/proxy/ClientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/entity/RPCRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/entity/RPCRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/nacos/Discovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/nacos/Discovery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-consumer/src/main/java/org/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-consumer/src/main/java/org/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/coder/Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/nacos/Registry.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/nacos/Registry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/client/handler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/client/handler/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/target/classes/entity/RPCRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/target/classes/entity/RPCRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mfrf-core/target/classes/netty/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/handler/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/handler/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/handler/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/netty/server/handler/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/provider/ServiceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/JsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/src/main/java/serializer/JsonSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/target/classes/nacos/Discovery.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/target/classes/nacos/Discovery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfrf-core/target/classes/netty/client/proxy/ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/client/proxy/ClientProxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfrf-core/target/classes/netty/server/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/server/Server$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mfrf-core/target/classes/netty/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/mfrf-core/target/classes/netty/server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/org/example/test4/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/org/example/test4/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/test/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/classes/org/example/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/classes/org/example/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +169,9 @@
       <workItem from="1681347646817" duration="13210000" />
       <workItem from="1681363738778" duration="169000" />
       <workItem from="1681375683048" duration="869000" />
-      <workItem from="1681385902689" duration="5652000" />
+      <workItem from="1681385902689" duration="5968000" />
+      <workItem from="1681433636305" duration="907000" />
+      <workItem from="1681437317119" duration="13543000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1681045548605</created>
@@ -220,19 +221,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="创建项目" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/mfrf-core/src/main/java/scan/ProviderScan.java</url>
-          <line>79</line>
-          <properties class="scan.ProviderScan" method="putService">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="classes.toArray()[0]" />

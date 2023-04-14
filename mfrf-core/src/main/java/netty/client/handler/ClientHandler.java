@@ -18,6 +18,7 @@ import serializer.Serializer;
 import util.Singleton;
 
 import java.net.InetSocketAddress;
+import java.util.UUID;
 
 public class ClientHandler extends SimpleChannelInboundHandler<RPCResponse> {
     private static final Logger log = LoggerFactory.getLogger(ClientHandler.class);
@@ -45,6 +46,7 @@ public class ClientHandler extends SimpleChannelInboundHandler<RPCResponse> {
                 log.info("向服务端发送心跳包");
                 Channel channel = ClientChannel.get((InetSocketAddress) ctx.channel().remoteAddress(), Serializer.getByCode(Serializer.DEFAULT_SERIALIZER));
                 RPCRequest rpcRequest = new RPCRequest();
+                rpcRequest.setReqId(UUID.randomUUID().toString());
                 rpcRequest.setHeart(true);
                 channel.writeAndFlush(rpcRequest).addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
             }else{

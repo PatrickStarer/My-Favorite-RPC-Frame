@@ -16,6 +16,7 @@ public class Registry {
     public void registry(String serviceName, InetSocketAddress inet){
         try{
             Nacos.register(serviceName,inet);
+            log.info("nacos注册服务：----->"+serviceName);
         }catch (NacosException e){
             log.error("服务注册出现错误");
             throw new RPCException(RPCErrorType.REGISTRY_ERROR);

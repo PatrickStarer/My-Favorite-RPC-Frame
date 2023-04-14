@@ -66,6 +66,7 @@ public class Server {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ChannelPipeline channelPipeline = ch.pipeline();
+                            //如果 30seconds server没有读操作，则执行IdleStateHandler处理器。
                             channelPipeline.addLast(new IdleStateHandler(30, 0, 0, TimeUnit.SECONDS))
                                     .addLast(new Decoder())
                                     .addLast(new Encoder(serializer))

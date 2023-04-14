@@ -54,6 +54,9 @@ public class JsonSerializer implements Serializer{
     private  Object jsonHandler(Object object) throws IOException{
         RPCRequest rpcRequest = (RPCRequest) object;
         //对请求的参数数组遍历
+        if(rpcRequest.getParams()==null){
+            return object;
+        }
         for(int i=0;i<rpcRequest.getParamType().length;i++){
             Class<?> clazz = rpcRequest.getParamType()[i];
             //判断 a 是否 为b的父类或者接口 或者 是同类 是返回true
